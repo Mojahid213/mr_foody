@@ -32,3 +32,19 @@
 .cstm_cursor{
     cursor: pointer;
 }
+.will_none{
+    border: 1px solid rgb(15, 26, 12);
+    padding:5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Media query for 570px */
+@media only screen and (max-width: 570px) {
+    .will_none{
+        display: none !important;
+    }
+    .to_right{
+        justify-content: end;
+    }
+  }
