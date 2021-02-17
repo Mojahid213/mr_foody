@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:ital,wght@1,500&family=Truculenta:wght@500&family=Yanone+Kaffeesatz:wght@500&display=swap');
+
+/*  font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Truculenta', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif; */
+
+.bg_img{
+    background-image: url('../images/image16.png');
+    background-position: center;
+}
+
+.Pizza-head{
+    font-size: 100px;
+    font-family: 'Oswald', sans-serif;
+}
+.pizza-title{
+    color: rgb(228, 43, 43);
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+.pizza-para{
+    color:rgb(40, 44, 33);
+    font-size:20px;
+}
+.offer_title{
+    font-family: 'Oswald', sans-serif;
+}
+.row{
+    margin: 0 !important;
+}
+.cstm_cursor{
+    cursor: pointer;
+}
