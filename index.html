@@ -51,7 +51,7 @@
               <div class="carousel-item active">
                <div class="bg_img p-5" style="background-color: #FFB428;">
                     <div class="row">
-                        <div class="col-lg-7 d-flex justify-content-center align-items-center text-center">
+                        <div class="order-2 order-lg-1 col-lg-7 d-flex justify-content-center align-items-center text-center">
                             <div>
                                 <h2 class="Pizza-head fw-bold wiggle">PIZZA <span class="text-danger">OFFERS</span></h2>
                                 <h4 class="pizza-title">The Best Pizza At Best Price</h4>
@@ -61,7 +61,7 @@
                                 <button class="btn btn-success rounded-pill" style="font-family: 'Oswald', sans-serif;">ORDER NOW</button>
                             </div>
                         </div>
-                        <div class="col-lg-5 pulse p-2">
+                        <div class="order-1 col-lg-5 pulse p-2">
                             <img src="./images/pizza_1.png" class="d-block w-100" alt="...">
                         </div>
                     </div>
@@ -102,26 +102,39 @@
              <!-- Food Search Section -->
               <div class="col-md-6">
                 <div class="border-top border-3 border-danger d-flex align-items-center py-2 to_right">
-                  <div class="mx-1 will_none hvr-grow"><span>Chicken</span></div>
-                  <div class="mx-1 will_none hvr-grow"><span>Beef</span></div>
-                  <div class="mx-1 will_none hvr-grow"><span>Curry</span></div>
+                  <div id="chicken" class="mx-1 will_none hvr-grow"><span>Chicken</span></div>
+                  <div id="beef" class="mx-1 will_none hvr-grow"><span>Beef</span></div>
+                  <div id="curry" class="mx-1 will_none hvr-grow"><span>Curry</span></div>
                   <nav class="navbar navbar-light bg-light">
                     <div class="container-fluid">
-                      <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                      </form>
+                      <div class="d-flex">
+                        <input id="search_input" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button id="search" class="btn btn-outline-success" type="submit">Search</button>
+                      </div>
                     </div>
                   </nav>
                 </div>
               </div>
+          </div>
              <!-- Food Search Section -->
+
              <!-- Food Showing Section -->
-             <div class="col-md-12 my-5">
-              <h2>My name is Mojahid</h2>
+            <div id="main_div" class="mt-4">
+              <div id="error_1"> </div>
+              <div id="error_2"></div>
+              <div id="row_div" class="row row-cols-1 row-cols-md-4 g-4">
+                <!-- <div class="col">
+                  <div class="card">
+                    <img src="./images/profile.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Card title</h5>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
             </div>
              <!-- Food Showing Section -->
-          </div>
+
        <!-- Find Items -->
 
    <!-- Main Section -->
@@ -137,5 +150,6 @@
           <br>
    <!-- JavaScript link -->
    <script src="./Js/bootstrap.min.js"></script>
+   <script src="./Js/script.js"></script>
 </body>
 </html>
