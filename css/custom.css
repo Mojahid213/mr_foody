@@ -4,6 +4,9 @@
     font-family: 'Roboto', sans-serif;
     font-family: 'Truculenta', sans-serif;
     font-family: 'Yanone Kaffeesatz', sans-serif; */
+body{
+    font-family: 'Oswald', sans-serif;
+}
 
 .bg_img{
     background-image: url('../images/image16.png');
@@ -39,10 +42,18 @@
     cursor: pointer;
 }
 .service_color{
-    color: rgb(66, 21, 150);
+    color: rgb(76, 29, 165);
     font-family: 'Oswald', sans-serif;
 }
-
+.cont_height{
+    height: 250px;
+}
+.footer-ul li{
+    list-style: none;
+}
+.footer-ul li>a{
+    text-decoration: none;
+}
 /* Media query for 570px */
 @media only screen and (max-width: 570px) {
     .will_none{

@@ -13,6 +13,10 @@ curry.addEventListener('click',()=>{
     const curryValue = curry.innerText;
     theInput.value = curryValue;
     searchBtn.click();
+    theInput.value = "";
+    beef.style.backgroundColor = "";
+    chicken.style.backgroundColor = "";
+    curry.style.backgroundColor = "Tomato";
 })
 
 //chicken btn event-listener
@@ -20,6 +24,10 @@ chicken.addEventListener('click',()=>{
     const ChickenValue = chicken.innerText;
     theInput.value = ChickenValue;
     searchBtn.click();
+    theInput.value = "";
+    beef.style.backgroundColor = "";
+    curry.style.backgroundColor = "";
+    chicken.style.backgroundColor = "Tomato";
 })
 
 //beef btn event-listener
@@ -27,24 +35,38 @@ beef.addEventListener('click',()=>{
     const beefValue = beef.innerText;
     theInput.value = beefValue;
     searchBtn.click();
+    theInput.value = "";
+    chicken.style.backgroundColor = "";
+    curry.style.backgroundColor = "";
+    beef.style.backgroundColor = "Tomato";
 })
 
 //Chicken event-listener
 window.addEventListener("load", () => {
   const chicvalue = chicken.innerText;
-  theInput.value = chicvalue;
+  theInput.value = chicvalue.trim();
   searchBtn.click();
+  theInput.value = "";
+  beef.style.backgroundColor = "";
+  curry.style.backgroundColor = "";
+  chicken.style.backgroundColor = "Tomato";
 });
 
 //Input field event-listener
 theInput.addEventListener("keypress", (event) => {
   if (event.key === "Enter") {
+    beef.style.backgroundColor = "";
+    curry.style.backgroundColor = "";
+    chicken.style.backgroundColor = "";
     searchBtn.click();
   }
 });
 //Search Btn event-listener
 searchBtn.addEventListener("click", () => {
   if (theInput.value != "") {
+    beef.style.backgroundColor = "";
+    curry.style.backgroundColor = "";
+    chicken.style.backgroundColor = "";
     fetch(
       `https://www.themealdb.com/api/json/v1/1/search.php?s=${theInput.value}`
     )
@@ -76,6 +98,9 @@ searchBtn.addEventListener("click", () => {
       });
   }
   if (theInput.value == "") {
+    beef.style.backgroundColor = "";
+    curry.style.backgroundColor = "";
+    chicken.style.backgroundColor = "";
     const theH1 = `
             <h1 style="text-align:center;color:red">Write Something!</h1>
         `;
