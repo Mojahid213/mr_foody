@@ -38,6 +38,10 @@
     border-radius: 5px;
     cursor: pointer;
 }
+.service_color{
+    color: rgb(66, 21, 150);
+    font-family: 'Oswald', sans-serif;
+}
 
 /* Media query for 570px */
 @media only screen and (max-width: 570px) {
