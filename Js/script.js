@@ -41,7 +41,7 @@ beef.addEventListener('click',()=>{
     beef.style.backgroundColor = "Tomato";
 })
 
-//Chicken event-listener
+//Windows onload event-listener
 window.addEventListener("load", () => {
   const chicvalue = chicken.innerText;
   theInput.value = chicvalue.trim();
@@ -67,6 +67,8 @@ searchBtn.addEventListener("click", () => {
     beef.style.backgroundColor = "";
     curry.style.backgroundColor = "";
     chicken.style.backgroundColor = "";
+    document.getElementById("spinner_div").classList.remove('d-none');
+    document.getElementById("main_div").classList.add('d-none');
     fetch(
       `https://www.themealdb.com/api/json/v1/1/search.php?s=${theInput.value}`
     )
@@ -95,6 +97,8 @@ searchBtn.addEventListener("click", () => {
         }
         error_1.innerHTML = "";
         row_div.innerHTML = html;
+        document.getElementById("spinner_div").classList.add('d-none');
+        document.getElementById("main_div").classList.remove('d-none');
       });
   }
   if (theInput.value == "") {
