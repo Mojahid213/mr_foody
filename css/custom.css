@@ -60,6 +60,6 @@ body{
         display: none !important;
     }
     .to_right{
-        justify-content: end;
+        justify-content: center;
     }
   }
